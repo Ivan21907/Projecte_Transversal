@@ -14,13 +14,12 @@
         android:orientation="vertical"
         android:gravity="center">
 
-        <TextView
-            android:id="@+id/tv_titol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="BTTrack"
-            android:textSize="60sp"
-            android:textColor="@color/white"/>
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="225dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/logo_plus"/>
         <Button
             android:id="@+id/btn_registrer"
             android:layout_width="wrap_content"
