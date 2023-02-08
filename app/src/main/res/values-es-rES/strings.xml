@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ProvesInterficiesProjecte</string>
+    <string name="name">Nombre</string>
+    <string name="surname">Apellido</string>
+    <string name="email">Correo Electronico</string>
+    <string name="password">Contraseña</string>
+    <string name="user_level">Tipo de Usuario</string>
+    <string name="btn_registre">Registro</string>
+    <string name="btn_login">Inicia Sesión</string>
+</resources>

@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Projecte_Transversal</string>
+    <string name="app_name">ProvesInterficiesProjecte</string>
+    <string name="name">First name</string>
+    <string name="surname">Secong name</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="user_level">User Type</string>
+    <string name="btn_registre">Register</string>
+    <string name="btn_login">Log in</string>
 </resources>
