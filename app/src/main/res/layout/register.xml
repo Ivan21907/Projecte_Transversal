@@ -5,81 +5,113 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/orange">
+    android:background="@color/aqua">
 
-    <TextView
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/logook"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/et_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pagina de registre"
-        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custominput"
+        android:drawableStart="@drawable/custom_person_icon"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Nom"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/et_surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custominput"
+        android:drawableStart="@drawable/custom_person_icon"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Cognoms"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custominput"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Email"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/et_passwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custominput"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Contrasenya"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/et_user_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custominput"
+        android:drawableStart="@drawable/custom_person_icon"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Tipus d'usuari"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Registrar"
         android:textColor="@color/white"
-        android:gravity="center"
-        android:background="@color/black"/>
+        android:textSize="20sp"
+        android:textStyle="bold"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
-
-        <EditText
-            android:id="@+id/et_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:hint="Nom"
-            android:ems="10"
-            android:inputType="textPersonName"
-            tools:ignore="MissingConstraints" />
-
-        <EditText
-            android:id="@+id/et_secondname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:hint="Cognom"
-            android:ems="10"
-            android:inputType="textPassword"
-            app:layout_constraintTop_toBottomOf="@+id/et_name"/>
-
-        <EditText
-            android:id="@+id/et_mail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:hint="Email"
-            android:ems="10"
-            android:inputType="textPassword"/>
-
-        <EditText
-            android:id="@+id/et_password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:hint="Contrasenya"
-            android:ems="10"
-            android:inputType="textPassword"/>
-
-        <EditText
-            android:id="@+id/et_level"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:hint="Nivell d'usuari"
-            android:ems="10"
-            android:inputType="textPassword"/>
-
-        <Button
-            android:id="@+id/btn_registrer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="32dp"
-            android:text="Registre't"/>
-
-
-
-    </LinearLayout>
 
 </LinearLayout>

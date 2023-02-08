@@ -16,15 +16,15 @@
 
         <ImageView
             android:id="@+id/iv_logo"
-            android:layout_width="225dp"
-            android:layout_height="200dp"
+            android:layout_width="250dp"
+            android:layout_height="225dp"
             android:layout_marginTop="100dp"
-            android:src="@drawable/logo_plus"/>
+            android:src="@drawable/bttrack" />
+
         <Button
             android:id="@+id/btn_registrer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="125dp"
             android:layout_gravity="center"
             android:backgroundTint="@color/green"
             android:padding="10dp"
